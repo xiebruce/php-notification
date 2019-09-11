@@ -12,6 +12,7 @@ require 'vendor/autoload.php';
 
 use Notification\Notification;
 
+// subtitle only supported on macOS.
 $config = [
 	'success' => [
 		'title' => 'Upload succeed',
