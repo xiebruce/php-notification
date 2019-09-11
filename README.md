@@ -1,9 +1,13 @@
 # php-notification
 Send notifications on Windows7/10 / macOS / Linux Desktop with php.
 
+## Install
+```bash
+composer require xiebruce/php-notification
+```
+
 ## Usage
 ```php
-	
 require 'vendor/autoload.php';
 
 use Notification\Notification;
