@@ -4,7 +4,7 @@ Send notifications on Windows7/10 / macOS / Linux Desktop with php.
 ## Usage
 ```php
 	
-require '../vendor/autoload.php';
+require 'vendor/autoload.php';
 
 use Notification\Notification;
 
