@@ -6,7 +6,7 @@
 	 * Time: 14:01
 	 */
 	
-	require dirname(__DIR__) . '/vendor/autoload.php';
+	require '../vendor/autoload.php';
 	
 	use Notification\Notification;
 	
