@@ -1,0 +1,19 @@
+{
+    "name": "xiebruce/php-notification",
+    "description": "Send notifications on Windows7/10 / macOS / Linux Desktop with php.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bruce Xie",
+            "email": "xiediebruce@hotmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">7.0"
+    },
+    "autoload": {
+        "psr-4": {"Notification\\": "src/"}
+    }
+}
