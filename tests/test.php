@@ -30,4 +30,12 @@
 	];
 	
 	$notify = new Notification($config);
+	
+	// success
 	$notify->send('success');
+	
+	// failed
+	// $notify->send('failed');
+	
+	// no_image
+	// $notify->send('no_image');

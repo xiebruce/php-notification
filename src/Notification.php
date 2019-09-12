@@ -39,12 +39,19 @@ class Notification {
 	 * @param array $config
 	 */
 	public function __construct(array $config = []){
+		if(PHP_OS == 'Linux'){
+			$notifySend1 = '/usr/bin/notify-send';
+			$notifySend2 = '/usr/local/bin/notify-send';
+			if(!is_file($notifySend1) && !is_file($notifySend2)){
+				exit('notify-send is required, you should install `notify-send` first.');
+			}
+		}
 		$this->config = $config;
 	}
 	
 	/**
 	 * Send notification on Windows 7/10, macOS and Linux Desktop(e.g. Ubuntu)
-	 * @param $type
+	 * @param $type, The key of your config
 	 *
 	 * @return bool
 	 */
